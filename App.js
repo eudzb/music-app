@@ -14,16 +14,18 @@ const Tab = createBottomTabNavigator();
 export default function App() {
     return (
         <NavigationContainer>
-            <Tab.Navigator initialRouteName={SongsList} screenOptions={
-                {
-                    headerShown: false,
-                    tabBarActiveTintColor: '#FFAF36',
-                    tabBarInactiveTintColor: 'white',
-                    tabBarStyle: {
-                        backgroundColor: '#0D0C22',
-                    }
-                }
-            }>
+            <Tab.Navigator initialRouteName={SongsList}
+                           screenOptions={
+                               {
+                                   headerShown: false,
+                                   tabBarActiveTintColor: '#FFAF36',
+                                   tabBarInactiveTintColor: 'white',
+                                   tabBarStyle: {
+                                       backgroundColor: '#0D0C22',
+                                       borderTopColor: 'transparent'
+                                   }
+                               }
+                           }>
                 <Tab.Screen name="SongsList"
                             component={SongsList}
                             options={{
