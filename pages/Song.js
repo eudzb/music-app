@@ -33,14 +33,14 @@ const Song = ({route}) => {
                             <Text style={styles.pitchLabel}>#{song.pitch}</Text>
                         </View>
 
-                        {song.chorus.length > 1 ?
+                        {song.chorus.length > 0 ?
                             <View style={styles.lyricsSection}>
                                 <Text style={styles.lyricsTitleSection}>Refrain</Text>
                                 <Text style={styles.lyricsMainSection}>{song.chorus}</Text>
                             </View> : null
                         }
 
-                        {song.verses.length > 1 ?
+                        {song.verses.length > 0 ?
                             <View style={styles.lyricsSection}>
                                 <Text style={styles.lyricsTitleSection}>Couplet</Text>
                                 <Text style={styles.lyricsMainSection}>{song.verses}</Text>
